@@ -65,7 +65,8 @@ h2 {
 
 .header {
   flex: 0.5;
-  border-bottom: $border-standard
+  border-bottom: $border-standard;
+  padding-bottom: 20px;
 }
 
 .footer {
@@ -83,8 +84,7 @@ h2 {
   }
 }
 
-.section {
+section {
   padding: 20px;
   margin-bottom: 30px;
 }
-

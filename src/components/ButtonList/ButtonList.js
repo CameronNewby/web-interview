@@ -5,7 +5,11 @@ const buttonList = props => {
   return (
     <div>
       {props.items.map(button => (
-        <button className="button" key={button}>
+        <button
+          className="button"
+          key={button}
+          onClick={event => props.clicked(event, button)}
+        >
           {button}
         </button>
       ))}
@@ -15,6 +19,7 @@ const buttonList = props => {
 
 buttonList.propTypes = {
   items: PropTypes.array,
+  clicked: PropTypes.func,
 }
 
 export default buttonList

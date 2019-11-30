@@ -36,7 +36,7 @@
     {
       "id": 5,
       "consultantType": ["specialist"],
-      "appointmentType": ["audio", "video"],
+      "appointmentType": ["audio"],
       "time": "2019-12-26T17:19:00.000Z"
     },
     {
