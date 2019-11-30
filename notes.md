@@ -6,6 +6,10 @@
 
 ## Overview
 
+- Restructured project folders to seperate stateless and stateful components
+- Refactored JSX structure, created seperate component for New Appiontmnet and added basic layout structure
+
+
 You should:
 - provide an overview of how you approached this challenge
 - explain any trade-offs you made here, for example if you decided to take less time on the styling so you could concentrate on tests

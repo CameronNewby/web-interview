@@ -1,4 +1,21 @@
 @import './constants.scss';
+@font-face {
+  font-family: 'Visuelt';
+  src: url('./fonts/visuelt-regular.eot') format('eot'),
+    url('./fonts/visuelt-regular.woff2') format('woff2'),
+    url('./fonts/visuelt-regular.woff') format('woff'),
+    url('./fonts/visuelt-regular.ttf') format('truetype');
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Visuelt';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
 
 .app-header {
   padding: $gutter-size--large;
@@ -10,20 +27,64 @@
   border-bottom: $border-standard;
 }
 
+.app-logo {
+
+}
+
 .button {
+  border-radius: 15px;
+  border: none;
   box-sizing: border-box;
-  padding: 12px;
-  background-color: $primary-dark;
+  padding: 10px;
+  background-color: $positive;
   color: $secondary-light;
-  width: calc(25% - 12px);
-  height: 42px;
   margin-right: 12px;
-  display: inline-block;
-  text-align: center;
 }
 
 h2 {
   &.h6 {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.contentCard {
+  flex: 1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex: 3;
+}
+
+.header {
+  flex: 0.5;
+  border-bottom: $border-standard
+}
+
+.footer {
+  padding-top: 20px;
+  border-top: $border-standard;
+
+  & button {
+    border-radius: 15px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #58bfa9;
+    color: #dfdfdf;
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
