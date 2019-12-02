@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const buttonList = props => {
+import './ButtonList.scss'
+
+const ButtonList = props => {
+  const [active, setActive] = useState(false)
+
   return (
-    <div>
-      {props.items.map(button => (
+    <div className="buttonList">
+      {props.items.map((button, idx) => (
         <button
-          className="button"
-          key={button}
-          onClick={event => props.clicked(event, button)}
+          className={active === idx ? 'button selected' : 'button'}
+          key={idx}
+          onClick={event => {
+            setActive(idx)
+            props.clicked(event, button)
+          }}
         >
           {button}
         </button>
@@ -17,9 +24,9 @@ const buttonList = props => {
   )
 }
 
-buttonList.propTypes = {
+ButtonList.propTypes = {
   items: PropTypes.array,
   clicked: PropTypes.func,
 }
 
-export default buttonList
+export default ButtonList

@@ -20,12 +20,10 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <div>
-          <div className="app-header">
-            <span className="icon">
-              <i className="fa fa-bars"></i>
-              <img src={logo} className="app-logo" alt="Babylon Health" />
-            </span>
+        <div className="navBar">
+          <div className="navBarContent">
+            <i className="fa fa-bars"></i>
+            <img src={logo} className="appLogo" alt="Babylon Health" />
           </div>
         </div>
         <NewAppointment />

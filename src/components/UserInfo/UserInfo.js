@@ -3,19 +3,19 @@ import PropTypes from 'prop-types'
 
 import './UserInfo.scss'
 
-const userInfo = props => {
+const UserInfo = props => {
   return (
     <span className="userInfo">
       <img src={props.avatar} alt="User Avatar" className="userAvatar" />
-      <p>{props.firstName + ' ' + props.lastName}</p>
+      <strong>{props.firstName + ' ' + props.lastName}</strong>
     </span>
   )
 }
 
-userInfo.propTypes = {
+UserInfo.propTypes = {
   avatar: PropTypes.string,
   firstName: PropTypes.string,
   lastName: PropTypes.string,
 }
 
-export default userInfo
+export default UserInfo
