@@ -13,7 +13,7 @@ import Section from '../../components/Section/Section'
 import './NewAppointment.scss'
 import '../../App.scss'
 
-class NewAppointment extends Component {
+export class NewAppointment extends Component {
   constructor(props) {
     super(props)
 

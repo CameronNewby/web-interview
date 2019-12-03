@@ -33,6 +33,7 @@
     "react-fontawesome": "1.7.1"
   },
   "devDependencies": {
+    "axios-mock-adapter": "1.17.0",
     "husky": "^2.5.0",
     "lint-staged": "^8.2.1",
     "react-scripts": "^3.0.1",

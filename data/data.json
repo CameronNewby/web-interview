@@ -106,6 +106,13 @@
       "type": "therapist",
       "notes": "I feel sick",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "dateTime": "Aug 30th 20:21",
+      "type": "gp",
+      "notes": "dhdghgddgh",
+      "id": 3
     }
   ]
 }
