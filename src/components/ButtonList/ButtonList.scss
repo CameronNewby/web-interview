@@ -13,6 +13,15 @@
         background-color: $positive;
         color: $secondary-light;
     }
+
+    &:hover {
+        background-color: $positive;
+        color: $secondary-light;
+    }
+
+    &:focus {
+        outline: 0;
+    }
 }
 
 .buttonList  > * {
