@@ -1,0 +1,30 @@
+@import '../../constants.scss';
+
+.button {
+    border-radius: 20px;
+    border: $border-standard;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 8px 15px 8px 15px;
+    margin-right: 12px;
+    text-transform: capitalize;
+
+    &.selected {
+        background-color: $positive;
+        color: $secondary-light;
+    }
+
+    &:hover {
+        background-color: $positive;
+        color: $secondary-light;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.buttonList  > * {
+    margin-top: 10px;
+    font-size: 14px
+}

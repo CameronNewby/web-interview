@@ -1,0 +1,47 @@
+@import '../../constants.scss';
+
+.contentCard {
+  flex: 1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 92%;
+  align-self: center;
+}
+
+.content {
+  flex: 3;
+}
+
+.header {
+  flex: 0.5;
+  border-bottom: $border-standard;
+  padding-bottom: 20px;
+}
+
+.footer {
+  padding: 20px 0px 10px 0px;
+  border-top: $border-standard;
+
+  & button {
+    border-radius: 7px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #58bfa9;
+    color: #dfdfdf;
+    width: 100%;
+  }
+}
+
+.notes {
+  width: calc(100% - 10px);
+  border-radius: 10px;
+  border: $border-standard;
+  padding: 10px;
+}
+
+.notes::placeholder {
+  color: $secondary;
+}

@@ -1,29 +1,47 @@
 @import './constants.scss';
-
-.app-header {
-  padding: $gutter-size--large;
-
-  img {
-    max-height: 33px;
-  }
-
-  border-bottom: $border-standard;
+@font-face {
+  font-family: 'Visuelt';
+  src: url('./fonts/visuelt-regular.eot') format('eot'),
+    url('./fonts/visuelt-regular.woff2') format('woff2'),
+    url('./fonts/visuelt-regular.woff') format('woff'),
+    url('./fonts/visuelt-regular.ttf') format('truetype');
 }
 
-.button {
-  box-sizing: border-box;
-  padding: 12px;
-  background-color: $primary-dark;
-  color: $secondary-light;
-  width: calc(25% - 12px);
-  height: 42px;
-  margin-right: 12px;
-  display: inline-block;
-  text-align: center;
+html, body, #root {
+  height: 100%;
+  font-family: 'Visuelt';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.navBar {
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  top: 0;
+}
+
+.navBarContent {
+  padding: $gutter-size--large;
+  border-bottom: $border-standard;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: calc(50% - 60px);
+  font-size: 20px;
+  color: #4a4a4a;
+}
+
+.appLogo {
+  max-height: 33px;
 }
 
 h2 {
   &.h6 {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
+
